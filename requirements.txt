@@ -1,0 +1,3 @@
+#jika gagal bisa dengan cara manual buak terminal dan masukan -> pip install wim
+
+wmi
