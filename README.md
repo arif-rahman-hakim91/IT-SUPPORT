@@ -1,24 +1,31 @@
-#IT SUPPORT TOOLKITS
+# IT Support Toolkit
 
-ini sebuah tool sederhana untuk IT Support Window dengan mengunakan python sebagai bahasa pemrogramannya
+IT Support Toolkit adalah sebuah tool sederhana untuk IT Support pada Komputer Window untuk menampilkan informasi sistem dan hardware dengan mengunakan python sebagai bahasa pemrogramannya
 
-##Fitur
+# Fitur
 - menampilkan Nama Komputer
 - menampilkan informasi OS
 - menampilkan informasi GPU
+- menampilkan informasi Keyboard
+- menampilkan informasi Mouse
+- menampilkan informasi Printer
+- menampilkan informasi Monitor
 
-##Requirements
-- python 3.10 -> terbaru
-- install WMI (window API)
+# Requirements
+- python 3.10 -> atau yang terbaru
+- install WMI
 
-##Instalasi
+# Instalasi
 -Terminal --> pip install -r requirements.txt
 
-##Fitur selanjutnya
+# Fitur selanjutnya
 -informasi RAM
 
-##Author
+# Author
 Arif Rahman Hakim
  
-##Email
+# Email
 hakimarifrahman91@gmail.com
+
+# GOAL
+Proyek ini saya buat sebagai bagian dari portofolio pribadi saya dan untuk mengembangkan kemampuan Python saya, sekaligus membangun aplikasi yang semoga bermanfaat bagi pekerjaan IT Support. Pengembangan ini saya lakukan secara bertahap dengan menambahkan fitur baru pada setiap versi
