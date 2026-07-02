@@ -21,11 +21,21 @@ IT Support Toolkit adalah sebuah tool sederhana untuk IT Support pada Komputer W
 # Fitur selanjutnya
 -informasi RAM
 
-# Author
-Arif Rahman Hakim
- 
-# Email
-hakimarifrahman91@gmail.com
+# Changelog
+
+## v0.1.0
+
+- menambah System Information
+- menambahkan Hardware Information
+- menambahkan Wireless Adapter Detection
+- membuat semua hardware supaya diketahui device detectionnya
+- menambahkan Boot Time untuk mengetahui berapa lama perangkat digunakan
 
 # GOAL
 Proyek ini saya buat sebagai bagian dari portofolio pribadi saya dan untuk mengembangkan kemampuan Python saya, sekaligus membangun aplikasi yang semoga bermanfaat bagi pekerjaan IT Support. Pengembangan ini saya lakukan secara bertahap dengan menambahkan fitur baru pada setiap versi
+
+# Author
+** Arif Rahman Hakim **
+ 
+## Email
+hakimarifrahman91@gmail.com
