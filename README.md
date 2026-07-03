@@ -3,13 +3,21 @@
 IT Support Toolkit adalah sebuah tool sederhana untuk IT Support pada Komputer Window untuk menampilkan informasi sistem dan hardware dengan mengunakan python sebagai bahasa pemrogramannya
 
 # Fitur
+
+## System Information
 - menampilkan Nama Komputer
 - menampilkan informasi OS
 - menampilkan informasi GPU
+## Hardware Information
 - menampilkan informasi Keyboard
 - menampilkan informasi Mouse
 - menampilkan informasi Printer
 - menampilkan informasi Monitor
+## RAM Information
+- Total RAM
+- Available RAM
+- Used RAM
+- RAM Usage Percentage
 
 # Requirements
 - python 3.10 -> atau yang terbaru
