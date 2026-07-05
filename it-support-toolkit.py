@@ -7,9 +7,14 @@ import time
 import psutil
 
 
-#membersihkan tampilan awal
 def clear_screen():
     os.system('cls')
+
+def header_version():
+    print('=' * 50)
+    print(f'{"IT SUPPORT TOOLKIT v0.2.0":^50}')
+    print(f'{"Developed by Arif Rahman Hakim":^50}')
+    print('=' * 50)
 
 def info_main():
     print('\nSYSTEM INFORMATION\n')
@@ -33,34 +38,34 @@ def info_perangkat():
     if detect:
         for keyboard in detect:
             print(f'Keyboard      : {keyboard.Name}')
-            print(f'Status        : {keyboard.Status}\n')
+            print(f'Status        : {keyboard.Status}')
     else:
-        print(f'Keyboard      : Not Detected\n')
+        print(f'Keyboard      : Not Detected')
     
     detect = client.Win32_PointingDevice()
     if detect:
         for mouse in detect:
             print(f'Mouse         : {mouse.Name}')
-            print(f'Status        : {mouse.Status}\n')
+            print(f'Status        : {mouse.Status}')
     else:
-        print(f'Mouse         : Not Detected\n')
+        print(f'Mouse         : Not Detected')
 
     detect = client.Win32_Printer()
     if detect:
         for printer in detect:
             if printer.Default:
                 print(f'Printer       : {printer.Name}')
-                print(f'Status        : {printer.Status}\n')
+                print(f'Status        : {printer.Status}')
     else:
-        print(f'Printer        : Not Detected\n')
+        print(f'Printer        : Not Detected')
 
     detect = client.Win32_DesktopMonitor()
     if detect:
         for monitor in detect:
             print(f'Monitor       : {monitor.Name}')
-            print(f'Status        : {monitor.Status}\n')
+            print(f'Status        : {monitor.Status}')
     else:
-        print(f'Monitor        : Not Detected\n')
+        print(f'Monitor        : Not Detected')
 
     for adapter in client.Win32_NetworkAdapter():
         if (adapter.PhysicalAdapter
@@ -78,12 +83,23 @@ def info_ram():
     print(f'Available RAM : {round(v_memory.available/(1024**3),2)} GB')
     print(f'Used RAM      : {round(v_memory.used/(1024**3),2)} GB')
     print(f'Percent Used  : {v_memory.percent}%')
+    if v_memory.percent < 70:
+        print("RAM usage     : Good ")
+        print("Recommendation: No action required ")
+    elif 70.00 <= v_memory.percent < 89:
+        print("RAM usage     : Fair ")
+        print("Recommendation: Close unsued application for best performance ")
+    elif v_memory.percent >= 90:
+        print("RAM usage     : Warning - High")
+        print("Recommendation: close unused application or Restart the Computer ")
+
 
 
 
     
 client = wmi.WMI()
 clear_screen()
+header_version()
 info_main()
 info_perangkat()
 info_ram()
